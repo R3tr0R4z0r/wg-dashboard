@@ -35,8 +35,8 @@ if [[ "$(lsb_release -is)" == "Raspbian" ]]; then
 elif [[ "$(lsb_release -is)" == "Ubuntu" ]]; then
 	# needed for add-apt-repository
 	apt-get install -y software-properties-common
-	# add wireguard repository to apt
-	add-apt-repository -y ppa:wireguard/wireguard
+	# add wireguard repository to apt (no longer need to add repo)
+	# add-apt-repository -y ppa:wireguard/wireguard
 	# install wireguard
 	apt-get install -y wireguard
 	# install linux kernel headers
