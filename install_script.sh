@@ -38,7 +38,7 @@ elif [[ "$(lsb_release -is)" == "Ubuntu" ]]; then
 	# add wireguard repository to apt
 	add-apt-repository -y ppa:wireguard/wireguard
 	# install wireguard
-	apt-get install -y wireguard
+	#apt-get install -y wireguard
 	# install linux kernel headers
 	apt-get install -y linux-headers-$(uname -r)
 elif [[ "$(lsb_release -is)" == "Debian" ]]; then
